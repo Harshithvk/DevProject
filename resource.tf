@@ -30,7 +30,7 @@ resource "aws_security_group" "my_sg" {
 resource "aws_instance" "server_one" {
   ami             = "ami-0f2ce9ce760bd7133"
   instance_type   = "t2.micro"
-  key_name        = "203devclass"
+  key_name        = "newone"
   security_groups = [aws_security_group.my_sg.name]
   count           = "2"
   tags = {
